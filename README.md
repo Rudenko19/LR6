@@ -108,16 +108,14 @@ git add README.md screenshots/
 git commit -m "Добавлен отчёт с логами и скриншотами"  
 git push origin report
 
-## 13. Создание и разрешение конфликта
-
-### 13.1 Создание веток для конфликта
+## 13. Создание веток для конфликта
 Команды:
 ```bash
 git checkout -b branch1
 git checkout -b branch2
 Скриншот: ![13](screenshots/13.png)
 
-### 13.2 Изменение одного файла в обеих ветках
+## 14. Изменение одного файла в обеих ветках
 git checkout branch1
 echo "Изменение из branch1" >> file.txt
 git add file.txt
@@ -127,18 +125,18 @@ git checkout branch2
 echo "Изменение из branch2" >> file.txt
 git add file.txt
 git commit -m "Изменение в branch2"
-Скриншот: ![13-2](screenshots/13-2.png)
+Скриншот: ![14](screenshots/12.png)
 
-### 13.3 Попытка слияния и возникновение конфликта
+## 15. Попытка слияния и возникновение конфликта
 git checkout branch1
 git merge branch2
-Скриншот: ![13-3](screenshots/13-3.png)
+Скриншот: ![15](screenshots/14.png)
 
-### 13.4 Решение конфликта
+## 16. Решение конфликта
 1. Открыть file.txt и вручную выбрать, какие изменения оставить.
 2. После исправления:
 git add file.txt
 git commit -m "Разрешен конфликт в file.txt"
 Описание: конфликт успешно разрешен, изменения объединены.
-Скриншот после решения конфликта: ![13-4](screenshots/13-4.png)
+Скриншот после решения конфликта: ![16](screenshots/15.png)
 
