@@ -113,7 +113,7 @@ git push origin report
 ```bash
 git checkout -b branch1
 git checkout -b branch2
-Скриншот: ![13](screenshots/13.png)
+
 
 ## 14. Изменение одного файла в обеих ветках
 git checkout branch1
@@ -125,12 +125,12 @@ git checkout branch2
 echo "Изменение из branch2" >> file.txt
 git add file.txt
 git commit -m "Изменение в branch2"
-Скриншот: ![14](screenshots/12.png)
+
 
 ## 15. Попытка слияния и возникновение конфликта
 git checkout branch1
 git merge branch2
-Скриншот: ![15](screenshots/14.png)
+
 
 ## 16. Решение конфликта
 1. Открыть file.txt и вручную выбрать, какие изменения оставить.
@@ -138,5 +138,5 @@ git merge branch2
 git add file.txt
 git commit -m "Разрешен конфликт в file.txt"
 Описание: конфликт успешно разрешен, изменения объединены.
-Скриншот после решения конфликта: ![16](screenshots/15.png)
+
 
